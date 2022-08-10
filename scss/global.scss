@@ -6,16 +6,16 @@ body {
 }
 .main {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   h1 {
     margin-left: 20px;
   }
-  p {
+  .description {
     max-width: 50%;
     text-align: justify;
-    font-size: large;
+    font-size: 20px;
+    margin-bottom: 30px;
     @media #{variables.$smartphone} {
       max-width: 90%;
     }
@@ -29,6 +29,7 @@ body {
   width: 100%;
   background-color: variables.$base;
   color: #f1e6dc;
+  font-size: 25px;
   h2 {
     padding: 20px;
   }
@@ -37,6 +38,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    margin-bottom: 50px;
     @media #{variables.$smartphone} {
       grid-template-columns: 1fr 1fr;
     }
@@ -44,5 +46,66 @@ body {
   li {
     display: flex;
     align-items: center;
+    gap: 5px;
+  }
+}
+
+.projects {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.project {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  @media #{variables.$smartablet} {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+  }
+}
+.date {
+  font-size: 18px;
+  padding: 3px;
+  color: variables.$contra;
+  background-color: variables.$base;
+  border-radius: 5px;
+}
+.text-project {
+  text-align: justify;
+  margin-top: 20px;  
+}
+
+.imgs{
+  width: 60%;
+}
+
+.toDeploy {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  color: variables.$contra;
+  background-color: variables.$base;
+  &:hover {
+    color: white;
+  }
+}
+.toRepo {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: solid 2px variables.$base;
+  color: variables.$base;
+  background-color: variables.$fondo;
+  &:hover {
+    background-color: variables.$contra;
   }
 }

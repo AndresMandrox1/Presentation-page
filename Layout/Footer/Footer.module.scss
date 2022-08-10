@@ -1,0 +1,74 @@
+@use "../../scss/variables.scss";
+
+.fo {
+  background-color: variables.$base;
+  color: variables.$contra;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+  align-items: center;
+  @media #{variables.$smartphone} {
+    display: block;
+  }
+}
+
+.about {
+  @media #{variables.$desktop} {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.img {
+  display: flex;
+  min-height: 80%;
+  max-width: 90%;
+  align-items: center;
+  padding: 4px 10px;
+  @media #{variables.$tablets} {
+    display: block;
+    min-height: fit-content;
+  }
+}
+.text {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media #{variables.$tablets} {
+    grid-template-columns: 1fr;
+    align-content: space-between;
+  }
+  @media #{variables.$smartphone} {
+    display: block;
+  }
+}
+
+.media {
+  padding: 4px 10px;
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+  a {
+    color: variables.$contra;
+    text-decoration: none;
+    &:hover {
+      color: variables.$fondo;
+    }
+  }
+  height: 50%;
+}

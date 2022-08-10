@@ -1,0 +1,40 @@
+@use '../scss/variables.scss';
+$font-size : 20px;
+.Navbar {
+  display: flex;
+  font-size: $font-size;
+  justify-content: space-between;
+  padding: 10px;
+  .list{
+    margin-right: 20px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    li {
+      margin-left: 15px;
+      list-style: none;
+      text-decoration: none;
+    }
+  }
+  .img {
+    margin-left: 50px;
+  }
+}
+
+.button{
+  color: variables.$base;
+  font-size: $font-size;
+  border-radius: 15px;
+  border: variables.$base 2px solid;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(229, 229, 229, 0.339);
+    border-width: 3px;
+  }
+}
+

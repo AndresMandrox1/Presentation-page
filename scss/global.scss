@@ -1,0 +1,48 @@
+@use "/scss/variables.scss";
+
+body {
+  margin: 0;
+  background-color: variables.$fondo;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    margin-left: 20px;
+  }
+  p {
+    max-width: 50%;
+    text-align: justify;
+    font-size: large;
+    @media #{variables.$smartphone} {
+      max-width: 90%;
+    }
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: variables.$base;
+  color: #f1e6dc;
+  h2 {
+    padding: 20px;
+  }
+  ul {
+    min-width: 55%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    @media #{variables.$smartphone} {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+}

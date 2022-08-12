@@ -95,7 +95,7 @@ export default function Home() {
           </ul>
         </article>
         <article className="projects">
-          <h2>Proyectos: </h2>
+          <h2 id="proyectos">Proyectos: </h2>
           <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
             <div className="project">
               <div className="text-project">

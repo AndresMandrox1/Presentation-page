@@ -12,10 +12,12 @@ export default function Navbar() {
         <div className={layout.list}>
           <ul>
             <li>
-              <a>Mis Proyectos</a>
+              <a href="#proyectos">Mis Proyectos</a>
             </li>
             <li>
-              <button className={layout.button}>Contactame</button>
+              <a href="#contacto">
+                <button className={layout.button}>Contactame</button>
+              </a>
             </li>
           </ul>
         </div>

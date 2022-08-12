@@ -12,7 +12,7 @@ import { GrMail } from "react-icons/gr";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="contacto">
       <div className={S.fo}>
         <div className={S.about}>
           <div className={S.img}>
